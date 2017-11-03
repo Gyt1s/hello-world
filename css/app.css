@@ -1,4 +1,11 @@
-    <style type="text/css">
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+   body 
+   {
+    font-family: 'Open Sans', sans-serif;
+   } 
+
+
     .poeple-table {
     	border: 3px solid darkblue;
     background: lawngreen;
@@ -19,6 +26,3 @@
     {
     	border-spacing: 0;
     }
-    
-
-</style>
