@@ -1,0 +1,24 @@
+    <style type="text/css">
+    .poeple-table {
+    	border: 3px solid darkblue;
+    background: lawngreen;
+    border-spacing: 0;
+}
+    .table-header
+    {
+    	background: azure;
+    font-weight: 800
+    }
+    .table-body
+    {
+    	background: blue;
+    	border-spacing: 0;
+    }
+
+    tr, td
+    {
+    	border-spacing: 0;
+    }
+    
+
+</style>
