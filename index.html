@@ -20,76 +20,44 @@
 </body>
 <script type="text/javascript">
 
-	var _do = {
-	"user_id": 1,
-	"name": "Gytis",
-	"address": {
-		"country": "lt",
-		"street": "Laisves al.",
-		"house": 1
-		}
-	};
+var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
 
-	var _da = ["lt", "en", "ru", "de", "pl", "lv", "ee" ] ;
+var currentLanguageIndex = getLanguage()
 
-	/* incrementing
-	var _i = 0.15
-	_i = _i + 1
-	_i += 1
-	_i++
-	++_i 
-	
+function getLanguage()
 
+{
+	var date = new Date();
+		date = date.getSeconds() % 10
+		date = languages[date];
 
+	return date;
+}
 
-
-
-
-	for (var i = 0;  i < _da.length; i++)
+function greetUser ()
+{
+	if (currentLanguageIndex === "en")
 	{
-		//console.log (i, _da[i])
+		console.log ("Hello world!");
 	}
-	// Array
-	_da.forEach (function (item){
-		console.log(item)
-	});
-	//Object
-	for (var prop in _do) {
-		console.log (prop, _do [prop])
+	else if (currentLanguageIndex === "lt")
+	{
+		console.log("Labas pasauli!");
 	}
-*/
-	var i = 0
-	var fiveArray = []
-	var amount = 10
-	var step = 15
+	else if (currentLanguageIndex === "de")
+	{
+		console.log("Hello welt!");
+	}
+	else
+	{
+		console.log("...")
+	}
+}
 
- 	while (fiveArray.length < 10){
+greetUser()
 
+console.log(currentLanguageIndex, languages[currentLanguageIndex]);
 
- 		if (i % step === 0)
- 		{
- 			//fiveArray.push(i)
- 			
- 			fiveArray[fiveArray.length] = i;
-
- 			console.log (i, true);
- 		}
- 		else
- 		{
- 			console.log (i, false)
- 		}
-
- 		i++
- 	}
-
-	console.log(fiveArray);
- 	
- 	fiveArray = []
- 	while (fiveArray.length < amount) {
- 		fiveArray.push (i);
- 		i += step;
- 	}
- 	
 	
 </script>
 </html>
