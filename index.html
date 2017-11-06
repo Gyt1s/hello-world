@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Hello world</title>
+    <title>Hello JavaScript</title>
     <link rel="stylesheet" href="css/app.css">
     <style> 
     body 
@@ -20,14 +20,76 @@
 </body>
 <script type="text/javascript">
 
+	var _do = {
+	"user_id": 1,
+	"name": "Gytis",
+	"address": {
+		"country": "lt",
+		"street": "Laisves al.",
+		"house": 1
+		}
+	};
 
-function squeareNumber (number, level)
-{
+	var _da = ["lt", "en", "ru", "de", "pl", "lv", "ee" ] ;
 
-	console.log(number ** level)
-}
+	/* incrementing
+	var _i = 0.15
+	_i = _i + 1
+	_i += 1
+	_i++
+	++_i 
 	
-	squeareNumber(5, 8)
 
+
+
+
+
+
+	for (var i = 0;  i < _da.length; i++)
+	{
+		//console.log (i, _da[i])
+	}
+	// Array
+	_da.forEach (function (item){
+		console.log(item)
+	});
+	//Object
+	for (var prop in _do) {
+		console.log (prop, _do [prop])
+	}
+*/
+	var i = 0
+	var fiveArray = []
+	var amount = 10
+	var step = 15
+
+ 	while (fiveArray.length < 10){
+
+
+ 		if (i % step === 0)
+ 		{
+ 			//fiveArray.push(i)
+ 			
+ 			fiveArray[fiveArray.length] = i;
+
+ 			console.log (i, true);
+ 		}
+ 		else
+ 		{
+ 			console.log (i, false)
+ 		}
+
+ 		i++
+ 	}
+
+	console.log(fiveArray);
+ 	
+ 	fiveArray = []
+ 	while (fiveArray.length < amount) {
+ 		fiveArray.push (i);
+ 		i += step;
+ 	}
+ 	
+	
 </script>
 </html>
